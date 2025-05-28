@@ -1,0 +1,187 @@
+{
+  "test_cases": [
+    {
+      "input": "Need a sunset-view table for two tonight; gluten-free menu a must",
+      "expected_output": {
+        "intent_category": "dining",
+        "key_entities": {
+          "party_size": 2,
+          "date": "tonight",
+          "dietary_restrictions": ["gluten-free"],
+          "ambiance": "sunset view"
+        },
+        "confidence_score": 0.9,
+        "follow_up_questions": [
+          "What time would you prefer for dinner?",
+          "Do you have a preferred location or restaurant?"
+        ]
+      }
+    },
+    {
+      "input": "Planning a trip to Paris for 4 people next month",
+      "expected_output": {
+        "intent_category": "travel",
+        "key_entities": {
+          "destination": "Paris",
+          "travelers_count": 4,
+          "departure_date": "next month"
+        },
+        "confidence_score": 0.85,
+        "follow_up_questions": [
+          "What specific dates are you looking at?",
+          "What's your budget range?",
+          "Do you need help with accommodation?"
+        ]
+      }
+    },
+    {
+      "input": "Need a gift for my mom's birthday under $100",
+      "expected_output": {
+        "intent_category": "gifting",
+        "key_entities": {
+          "recipient": "mom",
+          "occasion": "birthday",
+          "budget": "$100"
+        },
+        "confidence_score": 0.9,
+        "follow_up_questions": [
+          "When is her birthday?",
+          "What are her interests or hobbies?",
+          "What type of gift are you considering?"
+        ]
+      }
+    },
+    {
+      "input": "Book a cab to airport tomorrow morning for 3 people",
+      "expected_output": {
+        "intent_category": "cab_booking",
+        "key_entities": {
+          "destination": "airport",
+          "date": "tomorrow",
+          "time": "morning",
+          "passengers_count": 3
+        },
+        "confidence_score": 0.85,
+        "follow_up_questions": [
+          "What's your pickup location?",
+          "What specific time in the morning?",
+          "Do you prefer any particular cab type?"
+        ]
+      }
+    },
+    {
+      "input": "How to update Aadhar address online",
+      "expected_output": {
+        "intent_category": "other",
+        "key_entities": {
+          "service": "Aadhar address update",
+          "method": "online"
+        },
+        "confidence_score": 1.0,
+        "follow_up_questions": [
+          "Do you need help with the specific steps?",
+          "Do you have all required documents ready?"
+        ],
+        "web_search_results": [
+          {
+            "title": "How to Update Address in Aadhaar Card Online - UIDAI",
+            "url": "https://uidai.gov.in/en/...",
+            "snippet": "Steps to update address in Aadhaar card online through UIDAI portal..."
+          }
+        ]
+      }
+    },
+    {
+      "input": "Romantic dinner for anniversary tonight",
+      "expected_output": {
+        "intent_category": "dining",
+        "key_entities": {
+          "occasion": "anniversary",
+          "date": "tonight",
+          "ambiance": "romantic"
+        },
+        "confidence_score": 0.8,
+        "follow_up_questions": [
+          "How many people will be dining?",
+          "What time would you prefer?",
+          "Do you have a preferred location or cuisine?"
+        ]
+      }
+    },
+    {
+      "input": "Weekend getaway for couples under 50k",
+      "expected_output": {
+        "intent_category": "travel",
+        "key_entities": {
+          "duration": "weekend",
+          "travelers_count": 2,
+          "budget": "50k",
+          "trip_type": "getaway"
+        },
+        "confidence_score": 0.75,
+        "follow_up_questions": [
+          "Which weekend are you planning for?",
+          "Do you have a preferred destination?",
+          "What type of accommodation do you prefer?"
+        ]
+      }
+    },
+    {
+      "input": "Uber to mall right now",
+      "expected_output": {
+        "intent_category": "cab_booking",
+        "key_entities": {
+          "destination": "mall",
+          "time": "now",
+          "cab_type": "Uber"
+        },
+        "confidence_score": 0.8,
+        "follow_up_questions": [
+          "What's your pickup location?",
+          "Which mall specifically?"
+        ]
+      }
+    },
+    {
+      "input": "Birthday party ideas for 5 year old",
+      "expected_output": {
+        "intent_category": "other",
+        "key_entities": {
+          "event": "birthday party",
+          "age": "5 years",
+          "planning_type": "ideas"
+        },
+        "confidence_score": 0.6,
+        "follow_up_questions": [
+          "What's your budget for the party?",
+          "Do you prefer indoor or outdoor activities?",
+          "How many kids will attend?"
+        ],
+        "web_search_results": [
+          {
+            "title": "25 Fun Birthday Party Ideas for 5-Year-Olds",
+            "url": "https://example.com/birthday-ideas",
+            "snippet": "Creative and fun birthday party ideas for 5-year-old children..."
+          }
+        ]
+      }
+    },
+    {
+      "input": "Table for 6 at Italian restaurant this Saturday 7 PM",
+      "expected_output": {
+        "intent_category": "dining",
+        "key_entities": {
+          "party_size": 6,
+          "cuisine": "Italian",
+          "date": "Saturday",
+          "time": "7 PM"
+        },
+        "confidence_score": 0.95,
+        "follow_up_questions": [
+          "Do you have a specific restaurant in mind?",
+          "Do you have any dietary restrictions?"
+        ]
+      }
+    }
+  ]
+}
