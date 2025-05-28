@@ -22,7 +22,7 @@ A fuzzy input processor that converts natural language requests into structured 
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/dev-priyanshuu/personal-assistant-bot
    cd personal-assistant-bot
    ```
 
